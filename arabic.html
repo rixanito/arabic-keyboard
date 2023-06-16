@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" 
+  content="a powerful online tool: the Virtual Arabic Keyboard/clavier arabe /لوحة مفاتيح عربية. Designed to enhance your Arabic 
+  typing experience, our keyboard offers a seamless and 
+  intuitive interface. It enables you to effortlessly type in Arabic,
+   including 'al-harakat' (Arabic diacritical marks),
+  providing utmost accuracy and convenience.">
+
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic Keyboard</title>
+  <link rel="stylesheet" type="text/css" href="brabic.css">
+  <style>
+
+    /* Custom CSS for header */
+    header {
+     
+
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #6495ED;
+  color: #fff;
+  padding: 20px;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .header-left {
+      text-align: left;
+    }
+
+    .header-right {
+      text-align: right;
+    }
+    #foot{
+     
+  color: #fff;
+  padding: 10px;
+    }
+  </style>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.arabicKeyboard.com",
+    "name": "Arabic Keyboard",
+    "description": "a powerful online tool: the Virtual Arabic Keyboard/clavier arabe /لوحة مفاتيح عربية. Designed to enhance your Arabic 
+    typing experience, our keyboard offers a seamless and 
+    intuitive interface. It enables you to effortlessly type in Arabic,
+     including 'al-harakat' (Arabic diacritical marks),
+    providing utmost accuracy and convenience."
+  }
+  </script>
+  
+
+
+
+
+
+
+</head>
+<body>
+  <header>
+<h1 id="eng">Arabic Keyboard</h1>
+<h1 id="arb">لوحة مفاتيح عربية</h1>
+  </header>
+  <div id="container">
+    <div class="input-wrapper">
+      <div class="input-field-wrapper">
+        <input type="text" id="inputField" placeholder="Type here...">
+        <label class="input-label" for="inputField"></label>
+      </div>
+      <div class="button-wrapper">
+        <button id="lastDeleteButton" class="special-key">&#8592;</button>
+        <button id="allDeleteButton" class="special-key">&#10006;</button>
+      </div>
+    </div>
+    <div id="keyboard"></div>
+    <div class="space-bar">
+      <button id="spaceButton" class="special-key space-button"></button>
+    </div>
+  </div>
+
+  <script src="arabic.js"></script>
+
+ 
+  <div class="keyboard">
+    <!-- Virtual keyboard buttons here -->
+    <div class="space-bar">
+      <button id="googleButton" class="special-key"
+      onclick="search('https://www.google.com/search?q=')"
+      >
+        <img src="google.png" alt="Google" class="icon">
+      </button>
+      
+      <button id="youtubeButton" class="special-key"
+      onclick="search('https://www.youtube.com/results?search_query=')"
+      >
+        <img src="youtube.png" alt="YouTube" class="icon">
+      </button>
+      
+    </div>
+  </div>
+
+
+
+   <footer id="foot">
+    <p>&copy; 2023 <a href="https://github.com/rixanito">rixanito</a>. All rights reserved.</p>
+  </footer>
+
+
+
+</body>
+</html>

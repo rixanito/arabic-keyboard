@@ -1,0 +1,364 @@
+#keyboard {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 5px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.key {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.2s ease; 
+  /* Add transition for background color change */
+}
+
+.special-key {
+  padding: 5px;
+  text-align: center;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-field-wrapper {
+  position: relative;
+}
+
+.input-field-wrapper .input-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #777;
+  transition: all 0.3s ease;
+}
+
+.input-field-wrapper .input-label.active {
+  top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+#inputField {
+  width: 200px;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#inputField:focus {
+  border-color: #86BBD8;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.special-key {
+  padding: 5px;
+  text-align: center;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+}
+
+#lastDeleteButton {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#allDeleteButton {
+  border-radius: 50%;
+}
+
+.space-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.space-button {
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  width: 200px;
+  border-radius:
+
+5px;
+}
+
+.translate-frame iframe {
+  width: 600px;
+  height: 200px;
+}
+
+.translate-frame iframe::-webkit-scrollbar {
+  width: 12px;
+  background-color: #333;
+}
+
+.translate-frame iframe::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.translate-frame iframe::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.translate-frame {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.translate-frame iframe {
+  background-color: #1e1e1e;
+  width: 600px;
+  height: 200px;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+}
+
+input,
+textarea,
+select,
+button {
+  background-color: #2b2b2b;
+  color: #dcdcdc;
+  border: 1px solid #444;
+}
+
+a {
+  color: #fcfeff;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
+.key {
+  padding: 10px;
+  text-align: center;
+  background-color: #312f2fd2;
+  color: #dcdcdc;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+   /* Add transition for background color change */
+}
+
+.special-key {
+  padding: 5px;
+  text-align: center;
+  background-color: #312f2fd2;
+  color: #dcdcdc;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.special-key:hover {
+  background-color: #666;
+}
+
+#lastDeleteButton {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#allDeleteButton {
+  border-radius: 50%;
+}
+
+.space-button {
+  padding: 10px;
+  text-align: center;
+  background-color: #312f2fd2;
+  color: #dcdcdc;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 10px;
+  border-color: white;
+}
+
+#container {
+  margin-top: 150px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+#inputField {
+  height: 10px;
+  width: 280px;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  caret-color: #ffffff; /* Add this line */
+}
+
+#lastDeleteButton {
+  margin-right: 5px;
+}
+
+#allDeleteButton {
+  border-radius: 50%;
+}
+
+#container {
+  margin-top: 150px;
+}
+
+.input-container {
+  transform: translateX(-420px); /* Adjust the value to move it horizontally */
+}
+
+#youtubeButton,
+#googleButton {
+  padding: 5px;
+  text-align: center;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+#youtubeButton,
+#googleButton {
+  padding: 5px;
+  text-align: center;
+  background-color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+#youtubeButton img,
+#googleButton img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.key:hover {
+  background-color: #666; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
+.special-key:hover {
+  background-color: #666; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+#inputField.focused {
+  caret-color: white; /* Set the color of the cursor indicator line */
+}
+
+
+footer {
+  background-color: #1e1e1e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: auto;
+}
+
+
+body {
+  background-color: #1e1e1e;
+}
+
+.header {
+  background-color: #6495ED;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #6495ED;
+  color: #fff;
+  padding: 20px;
+}
+
+
